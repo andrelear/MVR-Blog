@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode colors. */
+:root {
+  --sl-color-accent-low: #0d2c0d;
+  --sl-color-accent: #019a16;
+  --sl-color-accent-high: #b0d4ae;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #eeeeee;
+  --sl-color-gray-2: #c2c2c2;
+  --sl-color-gray-3: #8b8b8b;
+  --sl-color-gray-4: #585858;
+  --sl-color-gray-5: #383838;
+  --sl-color-gray-6: #272727;
+  --sl-color-black: #181818;
+}
+/* Light mode colors. */
+:root[data-theme="light"] {
+  --sl-color-accent-low: #c4e0c3;
+  --sl-color-accent: #019a16;
+  --sl-color-accent-high: #063e09;
+  --sl-color-white: #181818;
+  --sl-color-gray-1: #272727;
+  --sl-color-gray-2: #383838;
+  --sl-color-gray-3: #585858;
+  --sl-color-gray-4: #8b8b8b;
+  --sl-color-gray-5: #c2c2c2;
+  --sl-color-gray-6: #eeeeee;
+  --sl-color-gray-7: #f6f6f6;
+  --sl-color-black: #ffffff;
+  --sl-color-bg-nav: #ffffff;
+  --sl-nav-pad-y: 1rem;
+}
+
+[aria-current="page"] {
+  @apply rounded-full;
+}
+
+.sl-badge {
+  @apply inline-flex items-center rounded-md bg-blue-100 px-1 py-0.5 text-xs font-medium text-blue-700 font-sans;
+}
